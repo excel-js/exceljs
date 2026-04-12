@@ -86,8 +86,7 @@
     "typescript": "^5.0.0"
   },
   "exports": {
-    ".": "./dist/index.mjs",
-    "./exceljs.bare": "./dist/exceljs.bare.mjs",
+    ".": "./dist/exceljs.nodejs.mjs",
     "./package.json": "./package.json"
   }
 }
