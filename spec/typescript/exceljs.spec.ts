@@ -1,5 +1,3 @@
-import 'regenerator-runtime/runtime';
-
 import { expect } from 'chai';
 import ExcelJS from '../../index';
 

@@ -4,10 +4,9 @@
 /* eslint-disable import/no-dynamic-require */
 
 const libs = {};
-const basePath = (function() {
-  const nodeMajorVersion = parseInt(process.versions.node.split('.')[0], 10);
-  libs.exceljs = require('../../lib/exceljs.nodejs');
-  return '../../lib/';
+const basePath = (function () {
+  libs.exceljs = require("../../lib/exceljs.nodejs");
+  return "../../lib/";
 })();
 
 module.exports = function verquire(path) {
