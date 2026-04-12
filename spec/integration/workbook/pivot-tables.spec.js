@@ -1,6 +1,6 @@
 // *Note*: `fs.promises` not supported before Node.js 11.14.0;
 // ExcelJS version range '>=8.3.0' (as of 2023-10-08).
-const fs = require('fs');
+const fs = require('node:fs');
 const {promisify} = require('util');
 
 const fsReadFileAsync = promisify(fs.readFile);

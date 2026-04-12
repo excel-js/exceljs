@@ -1,4 +1,4 @@
-const fs = require('fs');
+const fs = require('node:fs');
 
 const exists = path => new Promise(resolve => fs.exists(path, resolve));
 
