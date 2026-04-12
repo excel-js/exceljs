@@ -46,7 +46,6 @@
     "test:typescript": "mocha -r ts-node/register spec/typescript/**/*.spec.ts",
     "clean-build": "npm run clean && npm run build",
     "lint": "eslint --format node_modules/eslint-friendly-formatter .",
-    "lint:fix": "prettier-eslint --write $(pwd)'/**/*.js'",
     "lint:staged": "lint-staged",
     "clean": "rm -rf build/ && rm -rf dist",
     "benchmark": "node --expose-gc benchmark",
@@ -63,7 +62,6 @@
   },
   "lint-staged": {
     "*.js": [
-      "prettier-eslint --write",
       "eslint --format node_modules/eslint-friendly-formatter",
       "git add"
     ]
@@ -137,12 +135,10 @@
     "husky": "^4.3.0",
     "lint-staged": "^10.2.13",
     "mocha": "^7.2.0",
-    "prettier-eslint": "^11.0.0",
-    "prettier-eslint-cli": "^5.0.0",
     "regenerator-runtime": "^0.13.7",
     "sax": "^1.2.4",
     "ts-node": "^8.10.2",
     "tsdown": "^0.21.7",
-    "typescript": "^3.9.7"
+    "typescript": "^5.0.0"
   }
 }
