@@ -16,11 +16,6 @@
   "types": "./index.d.ts",
   "files": [
     "dist",
-    "lib",
-    "excel.js",
-    "LICENSE",
-    "README.md",
-    "index.ts",
     "index.d.ts"
   ],
   "scripts": {
@@ -35,14 +30,10 @@
     "test:dist": "mocha --require spec/config/setup spec/dist --recursive",
     "test:manual": "node spec/manual/app.js",
     "test:typescript": "mocha -r ts-node/register spec/typescript/**/*.spec.ts",
-    "clean-build": "npm run clean && npm run build",
-    "clean": "rm -rf build/ && rm -rf dist",
     "benchmark": "node --expose-gc benchmark",
     "benchmark:debug": "node --expose-gc --inspect-brk --trace-deopt benchmark",
     "build": "tsdown",
     "install-build": "npm install && npm run build",
-    "preversion": "npm run clean && npm run build && npm run test:version",
-    "postversion": "git push --no-verify && git push --tags --no-verify",
     "prepublishOnly": "bun run build"
   },
   "keywords": [
@@ -82,7 +73,6 @@
     "uuid": "^8.3.0"
   },
   "devDependencies": {
-    "@babel/cli": "^7.10.5",
     "@babel/core": "^7.11.4",
     "@babel/preset-env": "^7.11.0",
     "@rolldown/plugin-node-polyfills": "^1.0.3",
