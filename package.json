@@ -50,6 +50,17 @@
     "postversion": "git push --no-verify && git push --tags --no-verify",
     "prepublishOnly": "bun run build"
   },
+  "husky": {
+    "hooks": {
+      "pre-commit": "lint-staged"
+    }
+  },
+  "lint-staged": {
+    "*.js": [
+      "eslint --format node_modules/eslint-friendly-formatter",
+      "git add"
+    ]
+  },
   "keywords": [
     "xlsx",
     "json",
