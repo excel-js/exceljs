@@ -1,12 +1,25 @@
 import { defineConfig } from "tsdown";
+import nodePolyfills from "@rolldown/plugin-node-polyfills";
 
-export default defineConfig({
-  entry: {
-    exceljs: "./lib/exceljs.browser.js",
-    "exceljs.bare": "./lib/exceljs.bare.js",
-    index: "./lib/exceljs.nodejs.js",
+export default defineConfig([
+  {
+    entry: { exceljs: "./lib/exceljs.browser.js" },
+    format: ["cjs"],
+    platform: "browser",
+    plugins: [nodePolyfills()],
+    exports: true,
   },
-  format: ["cjs"],
-  exports: true,
-  // dts: true, // Generate declaration files if you're moving to TS
-});
+
+  {
+    entry: { "exceljs.bare": "./lib/exceljs.bare.js" },
+    format: ["cjs"],
+    exports: true,
+  },
+
+  {
+    entry: { index: "./lib/exceljs.nodejs.js" },
+    format: ["cjs"],
+    platform: "node",
+    exports: true,
+  },
+]);

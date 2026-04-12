@@ -85,11 +85,11 @@
     "@babel/cli": "^7.10.5",
     "@babel/core": "^7.11.4",
     "@babel/preset-env": "^7.11.0",
+    "@rolldown/plugin-node-polyfills": "^1.0.3",
     "@types/chai": "^4.2.12",
     "@types/mocha": "^8.0.3",
     "@types/node": "^20",
     "babelify": "^10.0.0",
-    "browserify": "^16.5.2",
     "chai": "^4.2.0",
     "chai-datetime": "^1.7.0",
     "chai-xml": "^0.3.2",
@@ -105,7 +105,7 @@
   },
   "exports": {
     ".": "./dist/index.cjs",
-    "./exceljs": "./dist/exceljs.cjs",
+    "./exceljs": "./dist/exceljs.js",
     "./exceljs.bare": "./dist/exceljs.bare.cjs",
     "./package.json": "./package.json"
   },
