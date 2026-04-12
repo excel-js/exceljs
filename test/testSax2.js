@@ -1,4 +1,4 @@
-const events = require('events');
+const events = require('node:events');
 const Sax = require('sax');
 const utils = require('./utils/utils');
 
