@@ -11,7 +11,7 @@
   "engines": {
     "node": ">=20"
   },
-  "main": "./excel.js",
+  "main": "./dist/index.cjs",
   "browser": "./dist/exceljs.min.js",
   "types": "./index.d.ts",
   "files": [
@@ -102,5 +102,14 @@
     "ts-node": "^8.10.2",
     "tsdown": "^0.21.7",
     "typescript": "^5.0.0"
+  },
+  "exports": {
+    ".": "./dist/index.cjs",
+    "./exceljs": "./dist/exceljs.cjs",
+    "./exceljs.bare": "./dist/exceljs.bare.cjs",
+    "./package.json": "./package.json"
+  },
+  "inlinedDependencies": {
+    "regenerator-runtime": "0.13.11"
   }
 }

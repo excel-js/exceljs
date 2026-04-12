@@ -7,5 +7,6 @@ export default defineConfig({
     index: "./lib/exceljs.nodejs.js",
   },
   format: ["cjs"],
+  exports: true,
   // dts: true, // Generate declaration files if you're moving to TS
 });
