@@ -20,23 +20,18 @@
     "excel.js",
     "LICENSE",
     "README.md",
-    "README_zh.md",
     "index.ts",
     "index.d.ts"
   ],
   "scripts": {
     "test": "npm run test:full",
-    "test:es5": "export EXCEL_BUILD=es5 && npm run test:full",
     "test:full": "npm run build && npm run test:unit && npm run test:integration && npm run test:end-to-end",
     "test:version": "npm run build && npm run test:unit && npm run test:integration && npm run test:end-to-end && npm run test:dist",
-    "test:all": "npm run test:native && npm run test:es5",
+    "test:all": "npm run test:native",
     "test:native": "npm run test:full",
     "test:unit": "mocha --require spec/config/setup --require spec/config/setup-unit spec/unit --recursive",
     "test:integration": "mocha --require spec/config/setup spec/integration --recursive",
     "test:end-to-end": "mocha --require spec/config/setup spec/end-to-end --recursive",
-    "test:unit:es5": "export EXCEL_BUILD=es5 && npm run test:unit",
-    "test:integration:es5": "export EXCEL_BUILD=es5 && npm run test:integration",
-    "test:end-to-end:es5": "export EXCEL_BUILD=es5 && npm run test:end-to-end",
     "test:dist": "mocha --require spec/config/setup spec/dist --recursive",
     "test:manual": "node spec/manual/app.js",
     "test:typescript": "mocha -r ts-node/register spec/typescript/**/*.spec.ts",
@@ -49,17 +44,6 @@
     "preversion": "npm run clean && npm run build && npm run test:version",
     "postversion": "git push --no-verify && git push --tags --no-verify",
     "prepublishOnly": "bun run build"
-  },
-  "husky": {
-    "hooks": {
-      "pre-commit": "lint-staged"
-    }
-  },
-  "lint-staged": {
-    "*.js": [
-      "eslint --format node_modules/eslint-friendly-formatter",
-      "git add"
-    ]
   },
   "keywords": [
     "xlsx",
@@ -109,12 +93,9 @@
     "chai": "^4.2.0",
     "chai-datetime": "^1.7.0",
     "chai-xml": "^0.3.2",
-    "core-js": "^3.6.5",
     "dirty-chai": "^2.0.1",
     "express": "^4.16.4",
     "got": "^9.0.0",
-    "husky": "^4.3.0",
-    "lint-staged": "^10.2.13",
     "mocha": "^7.2.0",
     "regenerator-runtime": "^0.13.7",
     "sax": "^1.2.4",
