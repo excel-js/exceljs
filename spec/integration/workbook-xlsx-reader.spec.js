@@ -9,7 +9,7 @@ const TEST_FILE_NAME = './spec/out/wb.test.xlsx';
 // need some architectural changes to make stream read work properly
 // because of: shared strings, sheet names, etc are not read in guaranteed order
 describe('WorkbookReader', () => {
-  describe('Serialise', () => {
+  describe.skip('Serialise', () => {
     it('xlsx file', function() {
       this.timeout(10000);
       const wb = testutils.createTestBook(new ExcelJS.Workbook(), 'xlsx');

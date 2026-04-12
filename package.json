@@ -1,5 +1,5 @@
 {
-  "name": "exceljs",
+  "name": "@excel.js/exceljs",
   "version": "4.4.0",
   "description": "Excel Workbook Manager - Read and Write xlsx and csv Files.",
   "private": false,
@@ -10,10 +10,10 @@
   },
   "repository": {
     "type": "git",
-    "url": "https://github.com/exceljs/exceljs.git"
+    "url": "git+https://github.com/excel-js/exceljs.git"
   },
   "engines": {
-    "node": ">=8.3.0"
+    "node": ">=20"
   },
   "main": "./excel.js",
   "browser": "./dist/exceljs.min.js",
@@ -31,15 +31,13 @@
   "scripts": {
     "test": "npm run test:full",
     "test:es5": "export EXCEL_BUILD=es5 && npm run test:full",
-    "test:full": "npm run build && npm run test:unit && npm run test:integration && npm run test:end-to-end && npm run test:jasmine",
-    "test:version": "npm run build && npm run test:unit && npm run test:integration && npm run test:end-to-end && npm run test:browser && npm run test:dist",
+    "test:full": "npm run build && npm run test:unit && npm run test:integration && npm run test:end-to-end",
+    "test:version": "npm run build && npm run test:unit && npm run test:integration && npm run test:end-to-end && npm run test:dist",
     "test:all": "npm run test:native && npm run test:es5",
     "test:native": "npm run test:full",
     "test:unit": "mocha --require spec/config/setup --require spec/config/setup-unit spec/unit --recursive",
     "test:integration": "mocha --require spec/config/setup spec/integration --recursive",
     "test:end-to-end": "mocha --require spec/config/setup spec/end-to-end --recursive",
-    "test:browser": "if [ ! -f .disable-test-browser ]; then npm run build && npm run test:jasmine; fi",
-    "test:jasmine": "grunt jasmine",
     "test:unit:es5": "export EXCEL_BUILD=es5 && npm run test:unit",
     "test:integration:es5": "export EXCEL_BUILD=es5 && npm run test:integration",
     "test:end-to-end:es5": "export EXCEL_BUILD=es5 && npm run test:end-to-end",
@@ -48,13 +46,12 @@
     "test:typescript": "mocha -r ts-node/register spec/typescript/**/*.spec.ts",
     "clean-build": "npm run clean && npm run build",
     "lint": "eslint --format node_modules/eslint-friendly-formatter .",
-    "lint:fix": "prettier-eslint --write $(pwd)'/**/*.js'",
     "lint:staged": "lint-staged",
     "clean": "rm -rf build/ && rm -rf dist",
     "benchmark": "node --expose-gc benchmark",
     "benchmark:debug": "node --expose-gc --inspect-brk --trace-deopt benchmark",
-    "build": "grunt build",
-    "install-build": "npm install && grunt build",
+    "build": "tsdown",
+    "install-build": "npm install && npm run build",
     "preversion": "npm run clean && npm run build && npm run test:version",
     "postversion": "git push --no-verify && git push --tags --no-verify"
   },
@@ -65,7 +62,6 @@
   },
   "lint-staged": {
     "*.js": [
-      "prettier-eslint --write",
       "eslint --format node_modules/eslint-friendly-formatter",
       "git add"
     ]
@@ -112,7 +108,7 @@
     "@babel/preset-env": "^7.11.0",
     "@types/chai": "^4.2.12",
     "@types/mocha": "^8.0.3",
-    "@types/node": "^14.11.2",
+    "@types/node": "^20",
     "babelify": "^10.0.0",
     "browserify": "^16.5.2",
     "chai": "^4.2.0",
@@ -139,11 +135,10 @@
     "husky": "^4.3.0",
     "lint-staged": "^10.2.13",
     "mocha": "^7.2.0",
-    "prettier-eslint": "^11.0.0",
-    "prettier-eslint-cli": "^5.0.0",
     "regenerator-runtime": "^0.13.7",
     "sax": "^1.2.4",
     "ts-node": "^8.10.2",
-    "typescript": "^3.9.7"
+    "tsdown": "^0.21.7",
+    "typescript": "^5.0.0"
   }
 }
