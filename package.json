@@ -68,8 +68,7 @@
     "jszip": "^3.10.1",
     "saxes": "^5.0.1",
     "tmp": "^0.2.0",
-    "unzipper": "^0.10.11",
-    "uuid": "^8.3.0"
+    "unzipper": "^0.10.11"
   },
   "devDependencies": {
     "@rolldown/plugin-node-polyfills": "^1.0.3",
