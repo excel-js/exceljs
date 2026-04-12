@@ -1,4 +1,4 @@
-const fs = require('fs');
+const fs = require('node:fs');
 const _ = require('../../lib/utils/under-dash.js');
 
 const main = {

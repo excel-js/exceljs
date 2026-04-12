@@ -1,5 +1,5 @@
 const {join} = require('path');
-const {readFileSync} = require('fs');
+const {readFileSync} = require('node:fs');
 
 const ExcelJS = verquire('exceljs');
 

@@ -1,4 +1,4 @@
-const fs = require('fs');
+const fs = require('node:fs');
 const JSZip = require('jszip');
 
 // eslint-disable-next-line node/no-unsupported-features/node-builtins

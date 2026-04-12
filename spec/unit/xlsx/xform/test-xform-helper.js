@@ -1,4 +1,4 @@
-const {PassThrough} = require('readable-stream');
+const {PassThrough} = require('node:stream');
 const {cloneDeep, each} = require('../../../utils/under-dash');
 const CompyXform = require('./compy-xform');
 

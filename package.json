@@ -1,6 +1,6 @@
 {
   "name": "@excel.js/exceljs",
-  "version": "0.1.0",
+  "version": "0.2.0",
   "description": "Excel Workbook Manager - Read and Write xlsx and csv Files.",
   "private": false,
   "license": "MIT",
@@ -66,11 +66,9 @@
     "dayjs": "^1.8.34",
     "fast-csv": "^4.3.1",
     "jszip": "^3.10.1",
-    "readable-stream": "^3.6.0",
     "saxes": "^5.0.1",
     "tmp": "^0.2.0",
-    "unzipper": "^0.10.11",
-    "uuid": "^8.3.0"
+    "unzipper": "^0.10.11"
   },
   "devDependencies": {
     "@rolldown/plugin-node-polyfills": "^1.0.3",

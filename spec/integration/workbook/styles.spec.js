@@ -1,4 +1,4 @@
-const stream = require('readable-stream');
+const stream = require('node:stream');
 const testUtils = require('../../utils/index');
 
 const ExcelJS = verquire('exceljs');
