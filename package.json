@@ -4,7 +4,8 @@
   "description": "Excel Workbook Manager - Read and Write xlsx and csv Files.",
   "license": "MIT",
   "imports": {
-    "#utils/*": "./lib/utils/*.js"
+    "#utils/*": "./lib/utils/*.js",
+    "#doc/*": "./lib/doc/*.js"
   },
   "repository": {
     "type": "git",
