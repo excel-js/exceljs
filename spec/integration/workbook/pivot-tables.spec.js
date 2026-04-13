@@ -5,7 +5,7 @@ const {promisify} = require('node:util');
 
 const fsReadFileAsync = promisify(fs.readFile);
 
-const JSZip = require('jszip');
+const JSZip = require('@excel.js/jszip');
 
 const ExcelJS = verquire('exceljs');
 
