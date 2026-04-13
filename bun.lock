@@ -5,7 +5,7 @@
     "": {
       "name": "exceljs",
       "dependencies": {
-        "@excel.js/jszip": "0.0.1",
+        "@excel.js/jszip": "0.0.2",
         "@excel.js/unzipper": "0.0.2",
         "archiver": "^5.0.0",
         "dayjs": "^1.8.34",
@@ -48,7 +48,7 @@
 
     "@emnapi/wasi-threads": ["@emnapi/wasi-threads@1.2.1", "", { "dependencies": { "tslib": "^2.4.0" } }, "sha512-uTII7OYF+/Mes/MrcIOYp5yOtSMLBWSIoLPpcgwipoiKbli6k322tcoFsxoIIxPDqW01SQGAgko4EzZi2BNv2w=="],
 
-    "@excel.js/jszip": ["@excel.js/jszip@0.0.1", "", { "dependencies": { "lie": "~3.3.0", "pako": "~1.0.2", "setimmediate": "^1.0.5" } }, "sha512-N8+wRr5RDYx0zAEW7c6+U3apGOBrno8Jb0D3tJYz119hj8aBqUVYkeYyUewA7+AIxAFlWRqh3Fmx8i5rPExK1g=="],
+    "@excel.js/jszip": ["@excel.js/jszip@0.0.2", "", { "dependencies": { "lie": "~3.3.0", "pako": "~1.0.2" } }, "sha512-ph6fucHplCOZYqQrm5m9dFHp2jlKVOyZwiM8yRm7QGRuwDLeI5Kn9DuV2dIjD3cnj+315VPncmwqIAw3KE+Bxw=="],
 
     "@excel.js/unzipper": ["@excel.js/unzipper@0.0.2", "", { "dependencies": { "binary": "~0.3.0", "bluebird": "~3.4.1" } }, "sha512-lC+/assK+cpcV7AZttzDZDVNjJL2GZ9LWdk+h+/Tw6pjWN5p5U3szGM1X0BxO1wXJE4i1L5mCyt7e+kQ5/15Nw=="],
 
@@ -533,8 +533,6 @@
     "serialize-javascript": ["serialize-javascript@5.0.1", "", { "dependencies": { "randombytes": "^2.1.0" } }, "sha512-SaaNal9imEO737H2c05Og0/8LUXG7EnsZyMa8MzkmuHoELfT6txuj0cMqRj6zfPKnmQ1yasR4PCJc8x+M4JSPA=="],
 
     "serve-static": ["serve-static@1.16.3", "", { "dependencies": { "encodeurl": "~2.0.0", "escape-html": "~1.0.3", "parseurl": "~1.3.3", "send": "~0.19.1" } }, "sha512-x0RTqQel6g5SY7Lg6ZreMmsOzncHFU7nhnRWkKgWuMTu5NN0DR5oruckMqRvacAN9d5w6ARnRBXl9xhDCgfMeA=="],
-
-    "setimmediate": ["setimmediate@1.0.5", "", {}, "sha512-MATJdZp8sLqDl/68LfQmbP8zKPLQNV6BIZoIgrscFDQ+RsvK/BxeDQOgyxKKoh0y/8h3BqVFnCqQ/gd+reiIXA=="],
 
     "setprototypeof": ["setprototypeof@1.2.0", "", {}, "sha512-E5LDX7Wrp85Kil5bhZv46j8jOeboKq5JMmYM3gVGdGH8xFpPWXUMsNrlODCrkoxMEeNi/XZIwuRvY4XNwYMJpw=="],
 
