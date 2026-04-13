@@ -1,0 +1,32 @@
+name: Tests
+
+on:
+  push:
+    branches: [master]
+  pull_request:
+    branches: ["**"]
+
+jobs:
+  benchmark:
+    timeout-minutes: 15
+    name: Measure performance impact of changes
+    runs-on: ubuntu-latest
+
+    steps:
+      - uses: actions/checkout@de0fac2e4500dabe0009e67214ff5f5447ce83dd # v6.0.2
+      - uses: actions/setup-node@53b83947a5a98c8d113130e565377fae1a50d02f # v6.3.0
+        with:
+          node-version: 20
+      - name: Create the npm cache directory
+        run: mkdir npm-cache && npm config set cache ./npm-cache --global
+      - name: Cache node modules
+        uses: actions/cache@668228422ae6a00e4ad889ee87cd7109ec5666a7 # v5.0.4
+        with:
+          path: ./npm-cache
+          key: v1-npm-${{ hashFiles('**/package.json') }}
+          restore-keys: |
+            v1-npm-
+      - run: npm install
+      - run: npm run benchmark
+        env:
+          CI: true

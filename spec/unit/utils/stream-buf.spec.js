@@ -1,5 +1,5 @@
 const fs = require('node:fs');
-const path = require('path');
+const path = require('node:path');
 
 const StreamBuf = verquire('utils/stream-buf');
 const StringBuf = verquire('utils/string-buf');

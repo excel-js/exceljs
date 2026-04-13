@@ -1,9 +1,12 @@
 {
   "name": "@excel.js/exceljs",
-  "version": "0.3.0",
+  "version": "0.4.0",
   "description": "Excel Workbook Manager - Read and Write xlsx and csv Files.",
-  "private": false,
   "license": "MIT",
+  "imports": {
+    "#utils/*": "./lib/utils/*.js",
+    "#doc/*": "./lib/doc/*.js"
+  },
   "repository": {
     "type": "git",
     "url": "git+https://github.com/excel-js/exceljs.git"
@@ -17,21 +20,14 @@
     "index.d.ts"
   ],
   "scripts": {
-    "test": "npm run test:full",
-    "test:full": "npm run build && npm run test:unit && npm run test:integration && npm run test:end-to-end",
-    "test:version": "npm run build && npm run test:unit && npm run test:integration && npm run test:end-to-end && npm run test:dist",
-    "test:all": "npm run test:native",
-    "test:native": "npm run test:full",
-    "test:unit": "mocha --require spec/config/setup --require spec/config/setup-unit spec/unit --recursive",
+    "test": "npm run build && npm run test:unit && npm run test:integration && npm run test:end-to-end",
+    "test:bun": "bun test tests",
+    "test:unit": "mocha --require spec/config/setup spec/unit --recursive",
     "test:integration": "mocha --require spec/config/setup spec/integration --recursive",
     "test:end-to-end": "mocha --require spec/config/setup spec/end-to-end --recursive",
-    "test:dist": "mocha --require spec/config/setup spec/dist --recursive",
-    "test:manual": "node spec/manual/app.js",
-    "test:typescript": "mocha -r ts-node/register spec/typescript/**/*.spec.ts",
     "benchmark": "node --expose-gc benchmark",
     "benchmark:debug": "node --expose-gc --inspect-brk --trace-deopt benchmark",
     "build": "tsdown",
-    "install-build": "npm install && npm run build",
     "prepublishOnly": "bun run build"
   },
   "keywords": [
@@ -69,6 +65,7 @@
     "unzipper": "^0.10.11"
   },
   "devDependencies": {
+    "@types/bun": "^1.3.12",
     "@types/chai": "^4.2.12",
     "@types/mocha": "^8.0.3",
     "@types/node": "^20",
@@ -80,7 +77,6 @@
     "got": "^9.0.0",
     "mocha": "^7.2.0",
     "sax": "^1.2.4",
-    "ts-node": "^8.10.2",
     "tsdown": "^0.21.7",
     "typescript": "^5.0.0"
   },

@@ -1,5 +1,5 @@
 const _ = verquire('utils/under-dash');
-const util = require('util');
+const util = require('node:util');
 
 describe('under-dash', () => {
   describe('isEqual', () => {

@@ -1,5 +1,5 @@
 const fs = require('node:fs');
-const {promisify} = require('util');
+const {promisify} = require('node:util');
 
 const ExcelJS = verquire('exceljs');
 
