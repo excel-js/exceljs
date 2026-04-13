@@ -81,7 +81,9 @@
     "typescript": "^5.0.0"
   },
   "exports": {
-    ".": "./dist/exceljs.nodejs.mjs",
+    ".": "./dist/index.mjs",
+    "./modelcontainer": "./dist/modelcontainer.mjs",
+    "./workbook": "./dist/workbook.mjs",
     "./package.json": "./package.json"
   }
 }
