@@ -3,6 +3,9 @@
   "version": "0.4.0",
   "description": "Excel Workbook Manager - Read and Write xlsx and csv Files.",
   "license": "MIT",
+  "imports": {
+    "#utils/*": "./lib/utils/*.js"
+  },
   "repository": {
     "type": "git",
     "url": "git+https://github.com/excel-js/exceljs.git"
@@ -17,7 +20,7 @@
   ],
   "scripts": {
     "test": "npm run test:full",
-    "test:bun": "bun test -r ./spec/config/setup tests",
+    "test:bun": "bun test tests",
     "test:full": "npm run build && npm run test:unit && npm run test:integration && npm run test:end-to-end",
     "test:version": "npm run build && npm run test:unit && npm run test:integration && npm run test:end-to-end",
     "test:all": "npm run test:native",

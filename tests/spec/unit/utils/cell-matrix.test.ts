@@ -1,6 +1,6 @@
 import { describe, it, expect } from "bun:test";
 
-const CellMatrix = require("../../../../lib/utils/cell-matrix");
+import CellMatrix from "#utils/cell-matrix";
 
 describe("CellMatrix", () => {
   it("getCell always returns a cell", () => {
