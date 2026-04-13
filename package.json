@@ -20,20 +20,14 @@
     "index.d.ts"
   ],
   "scripts": {
-    "test": "npm run test:full",
+    "test": "npm run build && npm run test:unit && npm run test:integration && npm run test:end-to-end",
     "test:bun": "bun test tests",
-    "test:full": "npm run build && npm run test:unit && npm run test:integration && npm run test:end-to-end",
-    "test:version": "npm run build && npm run test:unit && npm run test:integration && npm run test:end-to-end",
-    "test:all": "npm run test:native",
-    "test:native": "npm run test:full",
     "test:unit": "mocha --require spec/config/setup spec/unit --recursive",
     "test:integration": "mocha --require spec/config/setup spec/integration --recursive",
     "test:end-to-end": "mocha --require spec/config/setup spec/end-to-end --recursive",
-    "test:manual": "node spec/manual/app.js",
     "benchmark": "node --expose-gc benchmark",
     "benchmark:debug": "node --expose-gc --inspect-brk --trace-deopt benchmark",
     "build": "tsdown",
-    "install-build": "npm install && npm run build",
     "prepublishOnly": "bun run build"
   },
   "keywords": [
