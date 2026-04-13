@@ -5,7 +5,7 @@
     "": {
       "name": "exceljs",
       "dependencies": {
-        "@excel.js/archiver": "0.0.1",
+        "@excel.js/archiver": "0.0.2",
         "@excel.js/jszip": "0.0.2",
         "@excel.js/unzipper": "0.0.2",
         "dayjs": "^1.8.34",
@@ -48,7 +48,7 @@
 
     "@emnapi/wasi-threads": ["@emnapi/wasi-threads@1.2.1", "", { "dependencies": { "tslib": "^2.4.0" } }, "sha512-uTII7OYF+/Mes/MrcIOYp5yOtSMLBWSIoLPpcgwipoiKbli6k322tcoFsxoIIxPDqW01SQGAgko4EzZi2BNv2w=="],
 
-    "@excel.js/archiver": ["@excel.js/archiver@0.0.1", "", {}, "sha512-UnP22gJq8X0LdbUyDTVyHsg4/VMHxea5A8L62gGzU9+VHqj4fkWD3Lh3x5sta60hDIoCxfEeD4izNERKwm2OmA=="],
+    "@excel.js/archiver": ["@excel.js/archiver@0.0.2", "", {}, "sha512-CMShnhF1y/UE9fPO3qbJPw39Qgec0nhls1+9++GDM3gHkHSoJc7h8TDqykHxo5nY8r0ScSLnCBB8uU5ymiQjiA=="],
 
     "@excel.js/jszip": ["@excel.js/jszip@0.0.2", "", { "dependencies": { "lie": "~3.3.0", "pako": "~1.0.2" } }, "sha512-ph6fucHplCOZYqQrm5m9dFHp2jlKVOyZwiM8yRm7QGRuwDLeI5Kn9DuV2dIjD3cnj+315VPncmwqIAw3KE+Bxw=="],
 
