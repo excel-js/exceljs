@@ -1,5 +1,5 @@
 const fs = require('node:fs');
-const path = require('path');
+const path = require('node:path');
 
 const HrStopwatch = require('./utils/hr-stopwatch');
 

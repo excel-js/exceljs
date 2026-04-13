@@ -1,4 +1,4 @@
-const path = require('path');
+const path = require('node:path');
 
 const {expect} = require('chai');
 const testutils = require('../utils/index');
