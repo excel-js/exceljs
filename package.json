@@ -1,6 +1,6 @@
 {
   "name": "@excel.js/exceljs",
-  "version": "0.7.0",
+  "version": "0.8.0",
   "description": "Excel Workbook Manager - Read and Write xlsx and csv Files.",
   "license": "MIT",
   "imports": {
@@ -60,7 +60,7 @@
     "@excel.js/jszip": "0.0.2",
     "@excel.js/unzipper": "0.0.2",
     "dayjs": "^1.8.34",
-    "fast-csv": "^4.3.1",
+    "fast-csv": "^5.0.5",
     "saxes": "^5.0.1",
     "tmp": "^0.2.0"
   },
@@ -75,7 +75,7 @@
     "dirty-chai": "^2.0.1",
     "express": "^4.16.4",
     "got": "^9.0.0",
-    "mocha": "^8.0.0",
+    "mocha": "^9.0.0",
     "sax": "^1.2.4",
     "tsdown": "^0.21.7",
     "typescript": "^5.0.0"
