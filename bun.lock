@@ -3,7 +3,7 @@
   "configVersion": 1,
   "workspaces": {
     "": {
-      "name": "exceljs",
+      "name": "@excel.js/exceljs",
       "dependencies": {
         "@excel.js/archiver": "0.0.5",
         "@excel.js/jszip": "0.0.2",
