@@ -7,7 +7,7 @@
       "dependencies": {
         "@excel.js/archiver": "0.0.5",
         "@excel.js/jszip": "0.0.2",
-        "@excel.js/unzipper": "https://pkg.pr.new/@excel.js/unzipper@57e1b14",
+        "@excel.js/unzipper": "https://pkg.pr.new/@excel.js/unzipper@436dd22",
         "dayjs": "^1.8.34",
         "fast-csv": "^5.0.5",
         "saxes": "^5.0.1",
@@ -51,7 +51,7 @@
 
     "@excel.js/jszip": ["@excel.js/jszip@0.0.2", "", { "dependencies": { "lie": "~3.3.0", "pako": "~1.0.2" } }, "sha512-ph6fucHplCOZYqQrm5m9dFHp2jlKVOyZwiM8yRm7QGRuwDLeI5Kn9DuV2dIjD3cnj+315VPncmwqIAw3KE+Bxw=="],
 
-    "@excel.js/unzipper": ["@excel.js/unzipper@https://pkg.pr.new/@excel.js/unzipper@57e1b14", { "dependencies": { "bluebird": "~3.4.1", "buffers": "0.1.1", "chainsaw": "0.1.0" } }, "sha512-najpmauPZAYtKvxIsSeP0fzPZL3v1qnjNAHq1Q+OQNjajL2FLpTtU02hHuCT3xtp4A5hH2DmOK45Arq3U1IZWw=="],
+    "@excel.js/unzipper": ["@excel.js/unzipper@https://pkg.pr.new/@excel.js/unzipper@436dd22", { "dependencies": { "bluebird": "~3.7.0", "buffers": "0.1.1", "chainsaw": "0.1.0" } }, "sha512-ofw866LrrY4pp8gCNPXqWm66r5FKjLetbbsoKICMg+jfMEx2UPm34FTs5ZVuKwTSGXNz7xbKW4A/lHB8IZF0Sg=="],
 
     "@fast-csv/format": ["@fast-csv/format@5.0.5", "", { "dependencies": { "lodash.escaperegexp": "^4.1.2", "lodash.isboolean": "^3.0.3", "lodash.isfunction": "^3.0.9", "lodash.isnil": "^4.0.0" } }, "sha512-0P9SJXXnqKdmuWlLaTelqbrfdgN37Mvrb369J6eNmqL41IEIZQmV4sNM4GgAK2Dz3aH04J0HKGDMJFkYObThTw=="],
 
@@ -147,7 +147,7 @@
 
     "birpc": ["birpc@4.0.0", "", {}, "sha512-LShSxJP0KTmd101b6DRyGBj57LZxSDYWKitQNW/mi8GRMvZb078Uf9+pveax1DrVL89vm7mWe+TovdI/UDOuPw=="],
 
-    "bluebird": ["bluebird@3.4.7", "", {}, "sha512-iD3898SR7sWVRHbiQv+sHUtHnMvC1o3nW5rAcqnq3uOn07DSAppZYUkIGslDz6gXC7HfunPe7YVBgoEJASPcHA=="],
+    "bluebird": ["bluebird@3.7.2", "", {}, "sha512-XpNj6GDQzdfW+r2Wnn7xiSAd7TM3jzkxGXBGTtWKuSXv1xUV+azxAm8jdWZN06QTQk+2N2XB9jRDkvbmQmcRtg=="],
 
     "body-parser": ["body-parser@1.20.4", "", { "dependencies": { "bytes": "~3.1.2", "content-type": "~1.0.5", "debug": "2.6.9", "depd": "2.0.0", "destroy": "~1.2.0", "http-errors": "~2.0.1", "iconv-lite": "~0.4.24", "on-finished": "~2.4.1", "qs": "~6.14.0", "raw-body": "~2.5.3", "type-is": "~1.6.18", "unpipe": "~1.0.0" } }, "sha512-ZTgYYLMOXY9qKU/57FAo8F+HA2dGX7bqGc71txDRC1rS4frdFI5R7NhluHxH6M0YItAP0sHB4uqAOcYKxO6uGA=="],
 
