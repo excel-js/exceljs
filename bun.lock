@@ -7,7 +7,7 @@
       "dependencies": {
         "@excel.js/archiver": "0.0.5",
         "@excel.js/jszip": "0.0.2",
-        "@excel.js/unzipper": "0.0.2",
+        "@excel.js/unzipper": "https://pkg.pr.new/@excel.js/unzipper@57e1b14",
         "dayjs": "^1.8.34",
         "fast-csv": "^5.0.5",
         "saxes": "^5.0.1",
@@ -51,7 +51,7 @@
 
     "@excel.js/jszip": ["@excel.js/jszip@0.0.2", "", { "dependencies": { "lie": "~3.3.0", "pako": "~1.0.2" } }, "sha512-ph6fucHplCOZYqQrm5m9dFHp2jlKVOyZwiM8yRm7QGRuwDLeI5Kn9DuV2dIjD3cnj+315VPncmwqIAw3KE+Bxw=="],
 
-    "@excel.js/unzipper": ["@excel.js/unzipper@0.0.2", "", { "dependencies": { "binary": "~0.3.0", "bluebird": "~3.4.1" } }, "sha512-lC+/assK+cpcV7AZttzDZDVNjJL2GZ9LWdk+h+/Tw6pjWN5p5U3szGM1X0BxO1wXJE4i1L5mCyt7e+kQ5/15Nw=="],
+    "@excel.js/unzipper": ["@excel.js/unzipper@https://pkg.pr.new/@excel.js/unzipper@57e1b14", { "dependencies": { "bluebird": "~3.4.1", "buffers": "0.1.1", "chainsaw": "0.1.0" } }, "sha512-najpmauPZAYtKvxIsSeP0fzPZL3v1qnjNAHq1Q+OQNjajL2FLpTtU02hHuCT3xtp4A5hH2DmOK45Arq3U1IZWw=="],
 
     "@fast-csv/format": ["@fast-csv/format@5.0.5", "", { "dependencies": { "lodash.escaperegexp": "^4.1.2", "lodash.isboolean": "^3.0.3", "lodash.isfunction": "^3.0.9", "lodash.isnil": "^4.0.0" } }, "sha512-0P9SJXXnqKdmuWlLaTelqbrfdgN37Mvrb369J6eNmqL41IEIZQmV4sNM4GgAK2Dz3aH04J0HKGDMJFkYObThTw=="],
 
@@ -142,8 +142,6 @@
     "ast-kit": ["ast-kit@3.0.0-beta.1", "", { "dependencies": { "@babel/parser": "^8.0.0-beta.4", "estree-walker": "^3.0.3", "pathe": "^2.0.3" } }, "sha512-trmleAnZ2PxN/loHWVhhx1qeOHSRXq4TDsBBxq3GqeJitfk3+jTQ+v/C1km/KYq9M7wKqCewMh+/NAvVH7m+bw=="],
 
     "balanced-match": ["balanced-match@1.0.2", "", {}, "sha512-3oSeUO0TMV67hN1AmbXsK4yaqU7tjiHlbxRDZOpH0KW9+CeX4bRAaX0Anxt0tx2MrpRpWwQaPwIlISEJhYU5Pw=="],
-
-    "binary": ["binary@0.3.0", "", { "dependencies": { "buffers": "~0.1.1", "chainsaw": "~0.1.0" } }, "sha512-D4H1y5KYwpJgK8wk1Cue5LLPgmwHKYSChkbspQg5JtVuR5ulGckxfR62H3AE9UDkdMC8yyXlqYihuz3Aqg2XZg=="],
 
     "binary-extensions": ["binary-extensions@2.3.0", "", {}, "sha512-Ceh+7ox5qe7LJuLHoY0feh3pHuUDHAcRUeyL2VYghZwfpkNIy/+8Ocg0a3UuSoYzavmylwuLWQOf3hl0jjMMIw=="],
 
