@@ -7,7 +7,7 @@
       "dependencies": {
         "@excel.js/archiver": "0.0.5",
         "@excel.js/jszip": "0.0.2",
-        "@excel.js/unzipper": "https://pkg.pr.new/@excel.js/unzipper@436dd22",
+        "@excel.js/unzipper": "0.1.0",
         "dayjs": "^1.8.34",
         "fast-csv": "^5.0.5",
         "saxes": "^5.0.1",
@@ -51,7 +51,7 @@
 
     "@excel.js/jszip": ["@excel.js/jszip@0.0.2", "", { "dependencies": { "lie": "~3.3.0", "pako": "~1.0.2" } }, "sha512-ph6fucHplCOZYqQrm5m9dFHp2jlKVOyZwiM8yRm7QGRuwDLeI5Kn9DuV2dIjD3cnj+315VPncmwqIAw3KE+Bxw=="],
 
-    "@excel.js/unzipper": ["@excel.js/unzipper@https://pkg.pr.new/@excel.js/unzipper@436dd22", { "dependencies": { "bluebird": "~3.7.0", "buffers": "0.1.1", "chainsaw": "0.1.0" } }, "sha512-ofw866LrrY4pp8gCNPXqWm66r5FKjLetbbsoKICMg+jfMEx2UPm34FTs5ZVuKwTSGXNz7xbKW4A/lHB8IZF0Sg=="],
+    "@excel.js/unzipper": ["@excel.js/unzipper@0.1.0", "", { "dependencies": { "bluebird": "~3.7.0", "buffers": "0.1.1", "chainsaw": "0.1.0" } }, "sha512-Cd+fR2a8SuK4gmq219m0o9ZSoYmohuBmBFYTgtBojbKq2XrmA4kQd2twGmF2K/KOwhAx+0X/Vqkr4vqRJfft4A=="],
 
     "@fast-csv/format": ["@fast-csv/format@5.0.5", "", { "dependencies": { "lodash.escaperegexp": "^4.1.2", "lodash.isboolean": "^3.0.3", "lodash.isfunction": "^3.0.9", "lodash.isnil": "^4.0.0" } }, "sha512-0P9SJXXnqKdmuWlLaTelqbrfdgN37Mvrb369J6eNmqL41IEIZQmV4sNM4GgAK2Dz3aH04J0HKGDMJFkYObThTw=="],
 
