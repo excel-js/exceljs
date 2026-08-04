@@ -6,7 +6,7 @@
       "name": "@excel.js/exceljs",
       "dependencies": {
         "@excel.js/archiver": "0.0.5",
-        "@excel.js/jszip": "https://pkg.pr.new/@excel.js/jszip@cce5c9d",
+        "@excel.js/jszip": "0.1.0",
         "@excel.js/unzipper": "0.1.0",
         "dayjs": "^1.8.34",
         "fast-csv": "^5.0.5",
@@ -49,7 +49,7 @@
 
     "@excel.js/archiver": ["@excel.js/archiver@0.0.5", "", {}, "sha512-kmUyrn5+rLkHI+iEnvY3mV3Jh71s5LmSCRXBfoinSILz4jyPW+gCU/kvDfrTP2LltBiYXPCFIzP4QrhGjmzJow=="],
 
-    "@excel.js/jszip": ["@excel.js/jszip@https://pkg.pr.new/@excel.js/jszip@cce5c9d", { "dependencies": { "es-pako": "0.0.3" } }, "sha512-WA5gnB0OLu8/ZuaDt6t9QsINBUyln8Kw3rsqfrHAxNVbHv6JpdeBeZlFw7iTPIULgWiTRCVBtRqM0qR3DyXELw=="],
+    "@excel.js/jszip": ["@excel.js/jszip@0.1.0", "", { "dependencies": { "es-pako": "0.0.3" } }, "sha512-BDlySInZnn7MnaW7yyts5vXQ18vAofLszw45SUhd7VkXbwtmXVN+x0Htv25kln69j8CTZEZP+JyWtvrqHFU5bQ=="],
 
     "@excel.js/unzipper": ["@excel.js/unzipper@0.1.0", "", { "dependencies": { "bluebird": "~3.7.0", "buffers": "0.1.1", "chainsaw": "0.1.0" } }, "sha512-Cd+fR2a8SuK4gmq219m0o9ZSoYmohuBmBFYTgtBojbKq2XrmA4kQd2twGmF2K/KOwhAx+0X/Vqkr4vqRJfft4A=="],
 
