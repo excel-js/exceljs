@@ -57,7 +57,7 @@
   ],
   "dependencies": {
     "@excel.js/archiver": "0.0.5",
-    "@excel.js/jszip": "0.1.0",
+    "@excel.js/jszip": "https://pkg.pr.new/@excel.js/jszip@3d4e36f",
     "@excel.js/unzipper": "0.2.0",
     "dayjs": "^1.8.34",
     "fast-csv": "^5.0.5",

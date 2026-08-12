@@ -6,7 +6,7 @@
       "name": "@excel.js/exceljs",
       "dependencies": {
         "@excel.js/archiver": "0.0.5",
-        "@excel.js/jszip": "0.1.0",
+        "@excel.js/jszip": "https://pkg.pr.new/@excel.js/jszip@3d4e36f",
         "@excel.js/unzipper": "0.2.0",
         "dayjs": "^1.8.34",
         "fast-csv": "^5.0.5",
@@ -49,7 +49,7 @@
 
     "@excel.js/archiver": ["@excel.js/archiver@0.0.5", "", {}, "sha512-kmUyrn5+rLkHI+iEnvY3mV3Jh71s5LmSCRXBfoinSILz4jyPW+gCU/kvDfrTP2LltBiYXPCFIzP4QrhGjmzJow=="],
 
-    "@excel.js/jszip": ["@excel.js/jszip@0.1.0", "", { "dependencies": { "es-pako": "0.0.3" } }, "sha512-BDlySInZnn7MnaW7yyts5vXQ18vAofLszw45SUhd7VkXbwtmXVN+x0Htv25kln69j8CTZEZP+JyWtvrqHFU5bQ=="],
+    "@excel.js/jszip": ["@excel.js/jszip@https://pkg.pr.new/@excel.js/jszip@3d4e36f", { "dependencies": { "es-pako": "https://pkg.pr.new/es-pako@bd9f612" } }, "sha512-oBXLNf5DmUtEQaw7gBGnmcmJBGWEnra431WfZDQEz9/TJVDbJP3sCfGIFxLAm5g7LJT72Da6yY8HuhV+vdPTOw=="],
 
     "@excel.js/unzipper": ["@excel.js/unzipper@0.2.0", "", { "dependencies": { "buffers": "0.1.1", "chainsaw": "0.1.0" } }, "sha512-8Ev4c7OKMLkJZojQqowJiVOjgOw5NS85y0huSInrVGUfiI9jj9ivpE+QLPq1V9ueGkmjoD7Tf4qCDPPhCJFwBg=="],
 
@@ -245,7 +245,7 @@
 
     "es-object-atoms": ["es-object-atoms@1.1.1", "", { "dependencies": { "es-errors": "^1.3.0" } }, "sha512-FGgH2h8zKNim9ljj7dankFPcICIK9Cp5bm+c2gQSYePhpaG5+esrLODihIorn+Pe6FGJzWhXQotPv73jTaldXA=="],
 
-    "es-pako": ["es-pako@0.0.3", "", {}, "sha512-2Yp62OYVtEA6cm7rCNV83utlZfU3sEheTfYXnGWRga5NtdxiCaCsDtTXdGqSiKcUQFZHWrkTUkJIvvzrAWvxGw=="],
+    "es-pako": ["es-pako@https://pkg.pr.new/es-pako@bd9f612", {}, "sha512-G0I/9qJSjfedbM/C9tzViV6hpqYQjLZ2+fLH5ASIbcS9aJvkVcvHolvM/DPhOHEwKJ6TAIsVFUBJWNizFPqOQw=="],
 
     "escalade": ["escalade@3.2.0", "", {}, "sha512-WUj2qlxaQtO4g6Pq5c29GTcWGDyd8itL8zTlipgECz3JesAiiOKotd8JU6otB3PACgG6xkJUyVhboMS+bje/jA=="],
 
