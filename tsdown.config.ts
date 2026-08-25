@@ -6,5 +6,11 @@ export default defineConfig({
     workbook: "./lib/doc/workbook.js",
     modelcontainer: "./lib/doc/modelcontainer.js",
   },
-  exports: true,
+  exports: {
+    customExports(exports) {
+      // Declarations are hand-written at the package root, so tsdown can't infer them.
+      exports["."] = { types: "./index.d.ts", default: exports["."] };
+      return exports;
+    },
+  },
 });

@@ -80,7 +80,10 @@
     "typescript": "5.9.3"
   },
   "exports": {
-    ".": "./dist/index.mjs",
+    ".": {
+      "types": "./index.d.ts",
+      "default": "./dist/index.mjs"
+    },
     "./modelcontainer": "./dist/modelcontainer.mjs",
     "./workbook": "./dist/workbook.mjs",
     "./package.json": "./package.json"
