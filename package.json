@@ -79,6 +79,9 @@
     "tsdown": "0.21.7",
     "typescript": "5.9.3"
   },
+  "overrides": {
+    "yargs": "18.1.0"
+  },
   "exports": {
     ".": "./dist/index.mjs",
     "./modelcontainer": "./dist/modelcontainer.mjs",
