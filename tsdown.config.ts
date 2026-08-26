@@ -7,4 +7,5 @@ export default defineConfig({
     modelcontainer: "./lib/doc/modelcontainer.js",
   },
   exports: true,
+  dts: false,
 });
