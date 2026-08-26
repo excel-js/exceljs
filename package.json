@@ -56,7 +56,7 @@
     "pageSetup"
   ],
   "dependencies": {
-    "@excel.js/archiver": "https://pkg.pr.new/@excel.js/archiver@e4dc9d3",
+    "@excel.js/archiver": "0.1.0",
     "@excel.js/jszip": "0.2.0",
     "@excel.js/unzipper": "0.3.0",
     "dayjs": "^1.8.34",
